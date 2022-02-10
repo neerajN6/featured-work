@@ -1,0 +1,133 @@
+/*Image present in header tag*/
+            .header-img{
+                height: 90px;
+                width: 90px;
+            }
+            /*Header tag*/
+            .page-header{
+                font-family: "Jura";
+                color: #2d3c49;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 5px;
+                /*Used to put a horizontal line below header*/
+                border-bottom: 4px solid #7d97ad;
+            }
+            /*Header title*/
+            #header-h1{
+                font-size: 3em;
+            }
+            /*Header title and subtitle*/
+            .page-header-h{
+                text-align: end;
+                margin: 0px;
+            }
+            /*The header container consists of header title and subtitle*/
+            .header-container{
+                display: inline-block;
+                vertical-align: top;
+                float: right;
+            }
+            /*The main image in the body and width is 90% so that the image does
+            not take the whole page*/
+            .main-img{
+                padding-left: 15px;
+                padding-right: 15px;
+                height: 100%;
+                /*Display block is used to set a specific widths and height
+                properties to elements*/
+                display: block;
+                /*Margin left and margin right is used to centre the image in the 
+                middle of the screen*/
+                margin-left: auto;
+                margin-right: auto;
+                width: 90%;
+            }
+            /*Featured work text*/
+            .featured-work{
+                color: #7d97ad;
+                font-family: "Jura";
+                margin-left: 3%;
+            }
+            /*The main heading of each featured work*/
+            .work-head{
+                color: #2d3c49;
+                font-family: "Jura";
+                margin-left: 10px;
+                /*By default the margins of elements are set by default we set
+                margins top and bottom to 0 to remove the margins*/
+                margin-top: 0px;
+                margin-bottom: 0px;
+                text-align: center;
+            }
+            /*Github links of each featured work*/
+            .github{
+                color: #2d3c49;
+                font-family: "Jura";
+                margin-left: 10px;
+                margin-top: 0px;
+                text-align: center;
+            }
+            /*Each article image*/
+            .article-image{
+                height: 50%;
+                width: 100%;
+                /*The display is set to inline so that the element does not
+                occupy the whole line but only occupies the size of the image so
+                that more than one element can fit in a single line*/
+                display: inline;
+                border: 3px solid #2d3c49;
+            }
+            /*Full article*/
+            .art{
+                padding-left: 15px;
+                padding-right: 15px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            @media screen and (min-width: 980px)
+            {
+                .main-img{
+                height: 80%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 80%;
+            }
+                .work-head, .github{
+                color: #2d3c49;
+                font-family: "Jura";
+                margin-left: 10px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                text-align: center;
+            }
+            
+            .article-image{
+                height: 50%;
+                width: 100%;
+                display: inline;
+                border: 3px solid #2d3c49;
+            }
+            .art{
+                display: inline-block;
+                width: 30%;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .article-container{
+                /*Centre the three articles to the middle of the page*/
+                text-align: center;
+            }
+            }
+            @media screen and (min-width: 1300px)
+            {
+                /*At 1350px the width of the page will no longer increase and
+                stay the same through out*/
+                body{
+                    width: 1350px;
+                    /*Centre the body to the middle of the page*/
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
